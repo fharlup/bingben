@@ -54,7 +54,7 @@ const task = cron.schedule('0 0 */1 * * *', async () => {
 		
 			// immediately invoked function that loops to play the bell sound 
 			(function play() {
-				connection.play('https://www.youtube.com/watch?v=IQk4OC0no5Y')
+				connection.play('bigben.mp3')
 				.on('finish', () => {
 					count += 1;
 					if (count <= hour) {
